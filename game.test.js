@@ -39,11 +39,19 @@ describe('scoreFrame', () => {
         const frame = [5, 5]
 
         //Act
-
+        const actualOutput = scoreFrame(frame)
 
         //Assert
+        expect(actualOutput).toBe(expectedOutput)
     }
-    test.todo('should score a strike')
+    
+    test('should score a strike'), () => {
+        const frame = [10, 0]
+
+        const actualOutput = scoreFrame(frame)
+
+        expect(actualOutput).toBe(expectedOutput)
+    }
 })
 
 describe('scoreGame', () => {
